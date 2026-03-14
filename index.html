@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lebin Sebastian | Software Consultant</title>
+
+<style>
+
+:root{
+--navy:#1e2a3a;
+--crimson:#c1122f;
+--grey:#6b7280;
+--bg:#f5f7fb;
+}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:#111;
+}
+
+header{
+background:white;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:bold;
+font-size:20px;
+color:var(--navy);
+}
+
+.logo-circle{
+width:42px;
+height:42px;
+border-radius:50%;
+background:linear-gradient(135deg,var(--navy),var(--crimson));
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-weight:bold;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:var(--navy);
+font-weight:600;
+}
+
+.hero{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+padding:100px 40px;
+gap:40px;
+align-items:center;
+}
+
+.hero h1{
+font-size:46px;
+margin-bottom:10px;
+color:var(--navy);
+}
+
+.hero p{
+font-size:18px;
+color:var(--grey);
+}
+
+.cta{
+margin-top:20px;
+background:var(--crimson);
+border:none;
+padding:14px 26px;
+color:white;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.hero-emoji{
+font-size:120px;
+text-align:center;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:80px 40px;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:30px;
+color:var(--navy);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}
+
+.experience{
+margin-bottom:25px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.project{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.05);
+}
+
+.contact{
+text-align:center;
+}
+
+input{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+width:250px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:var(--grey);
+}
+
+@media(max-width:800px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-emoji{
+font-size:80px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<div class="logo-circle">
+	
+</div>
+Lebin Sebastian
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+<h1>Software Consultant 👨‍💻</h1>
+
+<p>
+15+ years experience building scalable web applications using
+Ruby on Rails, modern DevOps tools and cloud systems.
+</p>
+
+<button class="cta" onclick="scrollContact()">Hire Me 🤝</button>
+
+</div>
+
+<div class="hero-emoji">
+💻⚡🚀
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me 👨‍💻</h2>
+
+<p>
+I'm <b>Lebin Sebastian</b>, a software consultant with over
+<b>15 years of experience</b> building scalable web applications
+and leading engineering teams. I specialize in Ruby on Rails,
+API development, system architecture and DevOps automation.
+</p>
+
+<p>
+I have successfully delivered multiple enterprise applications
+across fintech, telecom and healthcare industries.
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical Skills 🧠</h2>
+
+<div class="skills">
+
+<div class="card">
+<h3>Languages 💻</h3>
+Ruby, JavaScript, Java, HTML, CSS
+</div>
+
+<div class="card">
+<h3>Frameworks ⚙️</h3>
+Ruby on Rails, jQuery, Bootstrap
+</div>
+
+<div class="card">
+<h3>Databases 🗄️</h3>
+MySQL, PostgreSQL, Oracle, MS SQL
+</div>
+
+<div class="card">
+<h3>DevOps ☁️</h3>
+Docker, GitHub Actions, GitLab CI,
+Capistrano
+</div>
+
+<div class="card">
+<h3>Testing 🧪</h3>
+RSpec, Cucumber, Capybara, Selenium
+</div>
+
+<div class="card">
+<h3>Tools 🧰</h3>
+GitHub, GitLab, Jira, Confluence, Redis
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="section-title">Professional Experience 💼</h2>
+
+<div class="experience">
+<h3>Rails Consultant – Telecom Payments (2020-Present)</h3>
+<p>Developing scalable telecom mobile payment microservices and upgrading Rails systems.</p>
+</div>
+
+<div class="experience">
+<h3>Rails Consultant – Inai Technologies</h3>
+<p>Built payment gateway integrations using ActiveMerchant and Rails 7.</p>
+</div>
+
+<div class="experience">
+<h3>Technical Lead – WeInvest India</h3>
+<p>Led development of robo-advisory platform for digital investment solutions.</p>
+</div>
+
+<div class="experience">
+<h3>Associate Technical Leader – ClearStack</h3>
+<p>Led a team of 10 engineers developing enterprise billing administration systems.</p>
+</div>
+
+<div class="experience">
+<h3>Software Engineer – KGiSL</h3>
+<p>Built hospital management and employee management systems.</p>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Key Projects 🚀</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Mobile Payment Platform 📱</h3>
+<p>Telecom payment system handling high-volume transactions.</p>
+</div>
+
+<div class="project">
+<h3>GrowWealth Platform 📊</h3>
+<p>Robo-advisory wealth management system for Mubasher UAE.</p>
+</div>
+
+<div class="project">
+<h3>Electronic Billing Administration 💳</h3>
+<p>Enterprise insurance billing platform for Standard Insurance USA.</p>
+</div>
+
+<div class="project">
+<h3>Hospital Management System 🏥</h3>
+<p>End-to-end healthcare management application.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact 📬</h2>
+
+<p>Email: libinenjoy@gmail.com</p>
+<p>Phone: +91 9994314550</p>
+
+<input id="email" placeholder="Your Email">
+
+<button class="cta" onclick="sendMsg()">Send Message ✉️</button>
+
+<p id="msg"></p>
+
+</section>
+
+<footer>
+
+© 2026 Lebin Sebastian | Software Consulting
+
+</footer>
+
+<script>
+
+function scrollContact(){
+document.getElementById("contact").scrollIntoView({behavior:"smooth"})
+}
+
+function sendMsg(){
+
+let email=document.getElementById("email").value
+let msg=document.getElementById("msg")
+
+if(email.length<5){
+msg.innerHTML="Enter a valid email ⚠️"
+return
+}
+
+msg.innerHTML="Thanks! I will contact you soon 🚀"
+
+}
+
+</script>
+
+</body>
+</html>
